@@ -9,9 +9,9 @@
   right: 0;
   z-index: 100;
   width: 100vw;
-  height: 93 / $unit * $symbol;
+  height: (93 + 36) / $unit * $symbol;
   padding: {
-    top: 15 / $unit * $symbol;
+    top: 36 / $unit * $symbol;
     left: 30 / $unit * $symbol;
     right: 30 / $unit * $symbol;
   }
@@ -32,12 +32,12 @@
   }
   &-left {
     position: absolute;
-    height: 78 / $unit * $symbol;
+    @include vertical_center();
+    height: 93 / $unit * $symbol;
     left: 30 / $unit * $symbol;
     z-index: 100;
     i {
-      font-size: 24 / $unit * $symbol;
-      line-height: 93 / $unit * $symbol;
+      font-size: 30 / $unit * $symbol;
       color: #333333;
       font-weight: bold;
     }

@@ -34,7 +34,7 @@ window.submitALiPay = function () {
 
 window.onload = function () {
   window.init()
-  window.bindScroll()
+  // window.bindScroll()
 }
 
 window.bindScroll = function () {

@@ -6,8 +6,7 @@
   height: 100vh;
   background-color: #600f4f;
   padding: {
-    top: 93 / $unit * $symbol;
-    bottom: 99 / $unit * $symbol;
+    top: 129 / $unit * $symbol;
   }
   overflow: auto;
   .shop-bg {
@@ -184,13 +183,17 @@
         }
       }
       .item-title {
-        display: -webkit-box;
+        @include center();
         width: 100%;
-        font-size: 24 / $unit * $symbol;
-        color: #666666;
+        height: 72 / $unit * $symbol;
+        display: -webkit-box;
         -webkit-box-orient: vertical;
         -webkit-line-clamp: 2;
         overflow: hidden;
+        width: 90%;
+        line-height: 36 / $unit * $symbol;
+        font-size: 27 / $unit * $symbol;
+        color: #666666;
       }
       .item-count {
         width: 100%;

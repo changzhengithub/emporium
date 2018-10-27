@@ -64,6 +64,7 @@ export default {
       this.$emit('CLOSE_MODAL_EVENT')
     },
     order () {
+      console.log(window.id)
       this.saveOrigin('product')
       this.saveOrigin4('product')
       this.saveProductId(this.buy.Id)
