@@ -11,6 +11,10 @@ window.kill = function () {
   }
 }
 
+// window.goBack = function () {
+//   window.app.$router.back(-1)
+// }
+
 window.paySuccess = function (finish) {
   if (finish) {
     window.payFinish = 'success'

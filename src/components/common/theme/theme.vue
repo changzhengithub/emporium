@@ -18,6 +18,14 @@ export default {
   props: ['theme'],
   methods: {
     goback () {
+      try {
+        if (typeof (appJsInterface) !== 'undefined') {
+          appJsInterface.Goback('')
+        } else {
+          window.webkit.messageHandlers.AppModel.postMessage(JSON.stringify('goBack'))
+        }
+      } catch (error) {
+      }
       if (this.theme.goal) {
         this.$router.push({
           name: this.theme.goal,
